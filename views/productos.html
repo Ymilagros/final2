@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="icon" href="imagenes/favicon-16x16.png">
+  </head>
+  <body>
+    <header>
+      <div class="menu logo-nav">
+        <a href="index.html" class="logo">MILAGROS GIL</a>
+        <label class="menu-icon"><span class="fas fa-bars icomin"><img src="imagenes/menu-alt-right-regular-24.png" alt=""></span></label>
+        <nav class="navigation">
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li class="search-icon">
+              <input type="search" placeholder="Search">
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+            <li class="car" >
+              <a href="/carrito"></a>
+              <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg>
+                <div id="carrito" class="dropdown-menu">
+                  <table id="lista-carrito" class="table">
+                      <thead>
+                          <tr>
+                              <th>Imagen</th>
+                              <th>Nombre</th>
+                              <th>Precio</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="vaciar-carrito" class="button-vaciar">Vaciar Carrito</a>
+                  <a href="#" id="procesar-pedido" class="button-pedido">Procesar Compra</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<main>
+
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <img src="" alt="" class="modal-img" id="modal-img">
+          </div>
+          <div class="modal-boton" id="modal-boton">X</div>
+        </div>
+
+        <div class="container-productos" id="lista-productos">
+
+          <div class="card">
+            <img 
+              src="imagenes/productos/vestidoRosaFlores_pq.webp" 
+              srcset="imagenes/productos/vestidoRosaFlres.webp 400w, imagenes/productos/vestidoRosaFlores_pq.webp 800w" 
+              sizes="(max-width: 600px) 400px, 800px" 
+              class="card-img" 
+              loading="lazy" 
+              alt="Vestido Rosa con Flores">
+            <h5>Gaban Tinto</h5>
+            <p>SKU: ROP0000074</p>
+            <p>$/.<small class="precio">180$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="imagenes/productos/taconpunta_Mediano.webp" class="card-img" loading="lazy">
+            <h5>Tacon de Punta Fina</h5>
+            <p>SKU: SHO0000005</p>
+            <p>$/.<small class="precio">150$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="2">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="imagenes/productos/clothes-1.webp" class="card-img" loading="lazy">
+            <h5>Sueter Fresa</h5>
+            <p>SKU: PROFRES</p>
+            <p>$/.<small class="precio">24$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="3">Comprar</a>
+          </div>
+
+          <div class="card">
+            <img src="imagenes/productos/cateralimon1.webp" class="card-img" loading="lazy">
+            <h5>Bolso de Mano Edition Special</h5>
+            <p>SKU: CART7LM0NS</p>
+            <p>$/.<small class="precio">260$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="4">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="imagenes/productos/conjuntoceleste.webp" class="card-img" loading="lazy">
+            <h5>Celeste - Conjunto Verano</h5>
+            <p>SKU: VRN001</p>
+            <p>$/.<small class="precio">350$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="5">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="imagenes/productos/vestidonegro.webp" class="card-img" loading="lazy">
+            <h5>Elegante Vestido Black</h5>
+            <p>SKU: ROP0000023</p>
+            <p>$/.<small class="precio">600$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="6">Comprar</a>
+          </div>
+
+          <div class="card">
+            <img src="imagenes/productos/zapatosmedianos.webp" class="card-img" loading="lazy">
+            <h5>Tacon Rose/Premium</h5>
+            <p>SKU: TC-D394-011</p>
+            <p>$/.<small class="precio">290$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="7">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="imagenes/productos/prada_milano.jpg" class="card-img" loading="lazy">
+            <h5>Bolsa Edition Special Prada</h5>
+            <p>SKU: PRADA-TSH023-1</p>
+            <p>$/.<small class="precio">900$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="8">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="imagenes/productos/shorts-1.webp" class="card-img" loading="lazy">
+            <h5>Rose Sport</h5>
+            <p>SKU: SPRMT</p>
+            <p>$/.<small class="precio">45$</small></p>
+            <a href="#" class="button agregar-carrito" data-id="9">Comprar</a>
+          </div>
+
+        </div>
+</main>
+  
+
+<footer class="footer-section">
+  <div class="copyright-area">
+      <div class="container-footer">
+          <div class="row-footer">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2024, todos los derechos reservados <a href="index.html">MILAGROS GIL</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="nosotros.html">Nosotros</a></li>
+                          <li><a href="productos.html">Productos</a></li>
+                          <li><a href="contacto.html">Contacto</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer> 
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script  src="script.min.js"></script>
+    <script src="carrito.min.js"></script>
+    <script src="pedido.min.js" defer></script>
+    <script src="compra.min.js"></script>
+</body>
+</html>
